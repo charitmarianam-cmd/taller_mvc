@@ -1,25 +1,32 @@
-<h1>Crear Producto</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Crear Producto</title>
+</head>
+<body>
 
-<form action="/taller_mvc/public/producto" method="POST">
+    <h1>Crear Producto</h1>
 
-    <label>Nombre:</label>
-    <input type="text" name="nombre" required>
+    <form action="/taller_mvc/public/producto" method="POST">
 
-    <br><br>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ej. Camiseta deportiva" required>
 
-    <label>Precio:</label>
-    <input type="number" name="precio" step="0.01" required>
+        <br><br>
 
-    <br><br>
+        <label for="precio">Precio:</label>
+        <input type="number" id="precio" name="precio" step="0.01" placeholder="Ej. 45.99" required>
 
-    <button type="submit">Guardar</button>
+        <br><br>
 
-</form>
+        <button type="submit">Guardar</button>
 
-<br>
+    </form>
 
-<a href="/taller_mvc/public/producto">Volver</a>
+    <br>
+
+    <a href="/taller_mvc/public/producto">Volver</a>
 
 </body>
-
 </html>
